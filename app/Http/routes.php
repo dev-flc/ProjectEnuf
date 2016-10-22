@@ -14,6 +14,10 @@ Route::get('/', function () {
     return view('/welcome');
 });
 
+Route::resource('quienessomos','QuienessomosController');
+Route::resource('contactanos','ContactanosController');
+Route::resource('general/alumnos','ListaalumnosController');
+
 Route::group(['middleware'=>['web']], function (){
 	
 	//Route::get('producto','Producto\ProductoController@index');
