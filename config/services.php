@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => enufproject\User::class,
+        'model' => Enufproject\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

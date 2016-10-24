@@ -184,7 +184,7 @@ $(document).ready(function()
        					</div>
        					<div class="col-sm-6 col-xs-6">
        						<a href="#" class="btn btn-default nuevoalumno ">
-       							<span class="fa fa-user-plus" aria-hidden="true"></span> Nuevo
+       							<span class="fa fa-user-plus" aria-hidden="true"></span> Registrar
        						</a>
        					</div>
 
@@ -192,35 +192,49 @@ $(document).ready(function()
   				</div>
   				<div class="panel-body">
   				<div class="table-responsive">
-  					<table class="table ">
-  						<tr>
-  							<th>Nombre</th>
-  							<th>Apellidos</th>
-  							<th>Semestre</th>
-  							<th>foto</th>
-  							<th>Opciones</th>
-  						</tr>
-  						<tr>
-  							<td>Fernando lucema</td>
-  							<td>hola como estas juanito</td>
-  							<td>mamammamama</td>
-  							<td>foto</td>
-  							<td>
-  								<button type="button" class="btn btn-primary"><span class="fa fa-user-secret" aria-hidden="true"></span>  Ver Perfil</button>
-  								<button type="button" class="btn btn-danger"><span class="fa fa-user-times" aria-hidden="true"></span> Eliminar</button>
-  							</td>
-						</tr>
-						<tr>
-  							<td>Fernando lucema</td>
-  							<td>hola como estas juanito</td>
-  							<td>mamammamama</td>
-  							<td>foto</td>
-  							<td>
-  								<button type="button" class="btn btn-primary">Ver Perfil</button>
-  								<button type="button" class="btn btn-danger">Eliminar</button>
-  							</td>
-						</tr>
-  					</table>
+            <table class="table">
+              <thead>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Matricula</th>
+                <th>Estatus</th>
+                <th>Semestre</th>
+                <th>Correo</th>
+                <th>Opciones</th>
+              </thead>
+              <tbody>
+              
+              <?php foreach($alum as $alumno): ?>
+                <tr>
+                    <td><?php echo e($alumno->nombre); ?></td>
+                    <td><?php echo e($alumno->apellidos); ?></td>
+                    <td><?php echo e($alumno->matricula); ?></td>
+                    <td><?php echo e($alumno->estatus); ?></td>
+                    <td><?php echo e($alumno->semestre); ?></td>
+                    <td><?php echo e($alumno->email); ?></td>
+                    <td>
+                        <a href="#" class="btn btn-primary">
+                          <span class="fa fa-cog" aria-hidden="true"></span> Perfil
+                        </a>
+                        <a href="#" class="btn btn-danger">
+                          <span class="fa fa-user-times" aria-hidden="true"></span> Eliminar
+                        </a>
+                    </td>
+                  </tr>
+              <?php endforeach; ?> 
+              
+
+              <!-- 
+                Consulta 2
+              -->
+              <?php foreach($aaa as $al): ?>
+                <tr>
+                    <td><?php echo e($al->id_usuario); ?></td>
+                </tr>
+              <?php endforeach; ?> 
+              
+              </tbody>
+            </table>
 				</div>
   				</div>
 			</div>

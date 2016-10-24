@@ -1,10 +1,11 @@
 <?php
+use Enufproject\Model;
 
-namespace enufproject\Http\Controllers;
+namespace Enufproject\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use enufproject\Http\Requests;
+use Enufproject\Http\Requests;
 
 class ListaalumnosController extends Controller
 {
@@ -14,8 +15,12 @@ class ListaalumnosController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('general/listaalumnos');
+    {   
+        $alum = \Enufproject\Model\Alumno::
+            select('alumno.id','alumno.matricula','alumno.estatus','alumno.semestre','usuario.nombre','usuario.apellidos','usuario.email')->join('usuario','usuario.id','=','alumno.id_usuario')->get();
+       $aaa = \Enufproject\Model\Alumno::all();
+
+        return View('general/listaalumnos')->with('alum',$alum)->with('aaa',$aaa);
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace enufproject\Jobs;
+namespace Enufproject\Jobs;
 
 use Illuminate\Bus\Queueable;
 

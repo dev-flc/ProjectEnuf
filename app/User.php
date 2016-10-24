@@ -1,6 +1,6 @@
 <?php
 
-namespace enufproject;
+namespace Enufproject;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 

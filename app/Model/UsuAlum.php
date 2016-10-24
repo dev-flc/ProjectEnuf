@@ -14,12 +14,12 @@ class UsuAlum extends Model
 
     public function alumnos()
     {
-    	return $this->hasMany('enufproject\Model\Alumno');
+    	return $this->hasMany('Enufproject\Model\Alumno');
     }
 
     public function usuarios()
     {
-    	return $this->hasMany('enufproject\Model\Usuario');
+    	return $this->hasMany('Enufproject\Model\Usuario');
     }
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace enufproject\Model;
+namespace Enufproject\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,19 +13,23 @@ class Alumno extends Model
         'id','matricula','status','semestre','id_usuario','id_direccion','id_escuela','id_tutor'
     ];
 
+    public function usuario()
+    {
+        return $this->hasOne('Enufproject\Model\Usuario');
+    }
     public function usualumno()
     {
-    	return $this->belongsTo('enufproject\Model\UsuAlum');
+    	return $this->belongsTo('Enufproject\Model\UsuAlum');
     }
 
     public function escuela()
     {
-        return $this->belongsTo('enufproject\Model\Escuela');
+        return $this->belongsTo('Enufproject\Model\Escuela');
     }
 
     public function tutor()
     {
-        return $this->hasOne('enufproject\Model\Tutor');
+        return $this->hasOne('Enufproject\Model\Tutor');
     }
     
 }

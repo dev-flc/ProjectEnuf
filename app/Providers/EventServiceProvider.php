@@ -1,6 +1,6 @@
 <?php
 
-namespace enufproject\Providers;
+namespace Enufproject\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'enufproject\Events\SomeEvent' => [
-            'enufproject\Listeners\EventListener',
+        'Enufproject\Events\SomeEvent' => [
+            'Enufproject\Listeners\EventListener',
         ],
     ];
 

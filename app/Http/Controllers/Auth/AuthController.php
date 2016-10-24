@@ -1,10 +1,10 @@
 <?php
 
-namespace enufproject\Http\Controllers\Auth;
+namespace Enufproject\Http\Controllers\Auth;
 
-use enufproject\User;
+use Enufproject\User;
 use Validator;
-use enufproject\Http\Controllers\Controller;
+use Enufproject\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace enufproject\Model;
+namespace Enufproject\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,6 +14,6 @@ class Tutor extends Model
 
     public function alumno()
     {
-        return $this->belongsTo('enufproject\Model\Alumno');
+        return $this->belongsTo('Enufproject\Model\Alumno');
     }
 }

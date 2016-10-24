@@ -1,8 +1,8 @@
 <?php
 
-namespace enufproject\Http\Controllers\Auth;
+namespace Enufproject\Http\Controllers\Auth;
 
-use enufproject\Http\Controllers\Controller;
+use Enufproject\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller

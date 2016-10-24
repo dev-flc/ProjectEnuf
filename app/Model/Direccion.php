@@ -1,6 +1,6 @@
 <?php
 
-namespace enufproject\Model;
+namespace Enufproject\Model;
 
 use Illuminate\Database\Eloquent\Model;
 

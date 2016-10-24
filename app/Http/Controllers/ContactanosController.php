@@ -1,10 +1,10 @@
 <?php
 
-namespace enufproject\Http\Controllers;
+namespace Enufproject\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use enufproject\Http\Requests;
+use Enufproject\Http\Requests;
 
 class ContactanosController extends Controller
 {

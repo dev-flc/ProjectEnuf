@@ -1,6 +1,6 @@
 <?php
 
-namespace enufproject\Events;
+namespace Enufproject\Events;
 
 abstract class Event
 {

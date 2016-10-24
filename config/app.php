@@ -151,10 +151,10 @@ return [
         /*
          * Application Service Providers...
          */
-        enufproject\Providers\AppServiceProvider::class,
-        enufproject\Providers\AuthServiceProvider::class,
-        enufproject\Providers\EventServiceProvider::class,
-        enufproject\Providers\RouteServiceProvider::class,
+        Enufproject\Providers\AppServiceProvider::class,
+        Enufproject\Providers\AuthServiceProvider::class,
+        Enufproject\Providers\EventServiceProvider::class,
+        Enufproject\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
     ],

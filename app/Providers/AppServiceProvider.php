@@ -1,6 +1,6 @@
 <?php
 
-namespace enufproject\Providers;
+namespace Enufproject\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

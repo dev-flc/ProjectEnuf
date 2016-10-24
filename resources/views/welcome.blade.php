@@ -3,6 +3,23 @@
 @section('title','Inicio')
 
 @section('contenido')
+   <!--
+              <?php # foreach ($alumnos as $alumno) ?>
+                <tr>
+                    <td>#{{$alumno->id}}</td>
+                    <td>#{{$alumno->matricula}}</td>
+                    <td>#{{$alumno->estatus}}</td>
+                    <td>#{{$alumno->semestre}}</td>
+                    <td>#{{$alumno->id_usuario}}</td>
+                    <td>#{{$alumno->id_direccion}}</td>
+                    <td>#{{$alumno->id_escuela}}</td>
+                    <td>#{{$alumno->id_tutor}}</td>
+                  </tr>
+              <?php # endforeach ?>
+              -->
+
+
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">

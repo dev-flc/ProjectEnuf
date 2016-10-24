@@ -1,6 +1,6 @@
 <?php
 
-namespace enufproject\Exceptions;
+namespace Enufproject\Exceptions;
 
 use Exception;
 use Illuminate\Validation\ValidationException;
